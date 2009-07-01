@@ -10,6 +10,11 @@ describe WeatherReader do
       reader.days.should == 30
     end
     
+    it "should return day 1 for max temperature spread" do
+      reader = WeatherReader.new
+      reader.max_temperature_spread.should == 1
+    end
+    
   end
 
 
