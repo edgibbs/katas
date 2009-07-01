@@ -1,4 +1,8 @@
+require 'logger'
+
 class WeatherReader
+  
+  $LOG = Logger.new($stderr)
   
   def initialize
     @lines = 0
@@ -13,7 +17,7 @@ class WeatherReader
   def max_temperature_spread
     largest_spread = 0
     max_day = 1
-    @temperature_spreads.each do | day, spread | 
+    @temperature_spreads.each do | day, spread |
       if spread > largest_spread
         max_day = day
         largest_spread = spread
@@ -48,7 +52,7 @@ private
   def parse_to_temperature_spread(line)
     day = line.slice(2,3).strip.to_i
     max = line.slice(6,7).strip.to_i
-    min = line.slice(13,14).strip.to_i
+    min = line.slice(12,13).strip.to_i
     @temperature_spreads[day] = max - min
   end
   
