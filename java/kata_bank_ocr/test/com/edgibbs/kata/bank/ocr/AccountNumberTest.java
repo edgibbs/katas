@@ -19,6 +19,7 @@ public class AccountNumberTest {
   }
 
   @Test public void shouldReturnNumber2() {
+    
     AccountNumber account = new AccountNumber();
     assertEquals(2, account.convert(" _ \n _|\n|_ "));
   }
