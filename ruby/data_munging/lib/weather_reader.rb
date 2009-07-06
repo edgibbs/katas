@@ -1,12 +1,17 @@
 require 'logger'
+require './lib/reader.rb'
 
 class WeatherReader
   
   $LOG = Logger.new($stderr)
+  STARTS_WITH_2_OR_3_SPACES_AND_THEN_A_DIGIT = /^\s{2,3}\d/
   
   def initialize
     @temperature_spreads = {}
-    read_weather_file()
+    reader = Reader.new
+    weather_lines = reader.get_lines('weather.dat')
+    weather_lines = reader.get_good_lines(weather_lines, STARTS_WITH_2_OR_3_SPACES_AND_THEN_A_DIGIT)
+    create_temperature_spreads(weather_lines)
   end
   
   def max_temperature_spread
@@ -22,27 +27,14 @@ class WeatherReader
   end
   
 private
-
-  def read_weather_file
-    lines = []
-    open(File.join(File.dirname(__FILE__), '../data/weather.dat')).each do |line|
-      lines << line
-    end
-    
-    lines.each do |line|
-      weather_lines = []
-      if (1..31).include?(line.slice(0,4).strip.to_i)
-        parse_to_temperature_spread(line)
-        weather_lines << line
-      end
-    end    
-  end
   
-  def parse_to_temperature_spread(line)
-    day = line.slice(2,3).strip.to_i
-    max = line.slice(6,7).strip.to_i
-    min = line.slice(12,13).strip.to_i
-    @temperature_spreads[day] = max - min
+  def create_temperature_spreads(lines)
+    lines.each do | line |
+      day = line.slice(2,3).strip.to_i
+      max = line.slice(6,7).strip.to_i
+      min = line.slice(12,13).strip.to_i
+      @temperature_spreads[day] = max - min
+    end
   end
   
 end
