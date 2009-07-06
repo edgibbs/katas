@@ -1,12 +1,15 @@
 require 'logger'
+require './lib/reader.rb'
 
 class SoccerLeagueReader
   
   $LOG = Logger.new($stderr)
   
   def initialize
+    reader = Reader.new
     @team_stat_lines = []
-    parse_file()
+    @team_stat_lines = reader.get_lines('football.dat')
+    @team_stat_lines = reader.get_good_lines(@team_stat_lines, /\d. /)
     @smallest_goal_difference_team = find_smallest_goal_difference()
   end
   
@@ -15,19 +18,6 @@ class SoccerLeagueReader
   end
   
 private
-
-  def parse_file
-    lines = []
-    open(File.join(File.dirname(__FILE__), '../data/football.dat')).each do |line|
-      lines << line
-    end
-    
-    lines.each do | line |
-      if line.slice(4,5) =~ /\d./
-        @team_stat_lines << line
-      end
-    end
-  end
   
   def find_smallest_goal_difference
     goal_differences = build_team_hash()
