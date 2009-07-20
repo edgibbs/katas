@@ -16,7 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="" />
-    <ignored path="bloom_filters.iws" />
+    <ignored path="anagrams.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
@@ -73,41 +73,74 @@
     <option name="HIDE_WARNINGS" value="false" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="bloom_filters" />
+    <favorites_list name="anagrams" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SpellChecker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/edgibbs/bloom/filters/SpellChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="53" selection-start="686" selection-end="686" vertical-scroll-proportion="0.38636363">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpellCheckerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/edgibbs/bloom/filters/SpellCheckerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.027272727">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionary.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="234885" column="12" selection-start="0" selection-end="2486812" vertical-scroll-proportion="0.26363635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="three_words.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/three_words.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02116402">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="small_dictionary.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/small_dictionary.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.06349207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnagramTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/AnagramTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="18" selection-start="797" selection-end="797" vertical-scroll-proportion="0.65608466">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dictionary.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.22181146">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Anagram.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Anagram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="99" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.52910054">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/WordTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.12698413">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Word.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Word.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.16931216">
               <folding />
             </state>
           </provider>
@@ -146,87 +179,87 @@
     <subPane>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters/test" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams/test" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters/test/com/edgibbs/bloom/filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams/test/com/edgibbs/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters/src" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams/src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters/src/com/edgibbs/bloom/filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams/src/com/edgibbs/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Bloom_filters" />
+          <option name="myItemId" value="anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/bloom_filters/resources" />
+          <option name="myItemId" value="PsiDirectory:/Users/edgibbs/katas/java/anagrams/resources" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -257,9 +290,14 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.All in Bloom_filters">
-    <tempConfiguration default="false" name="All in Bloom_filters" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="Bloom_filters" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.edgibbs.anagrams" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in anagrams">
+    <tempConfiguration default="false" name="All in anagrams" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="anagrams" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
@@ -366,7 +404,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in Bloom_filters" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in anagrams" />
     </list>
   </component>
   <component name="StarteamConfiguration">
@@ -419,14 +457,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954017" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="1" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954017" order="1" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
@@ -435,7 +473,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" order="2" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="4" />
@@ -507,31 +545,58 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com/edgibbs/bloom/filters/SpellCheckerTest.java">
+    <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.027272727">
+        <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.22181146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/small_dictionary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.06349207">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/three_words.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02116402">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edgibbs/bloom/filters/SpellChecker.java">
+    <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/AnagramTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="53" selection-start="686" selection-end="686" vertical-scroll-proportion="0.38636363">
+        <state line="31" column="18" selection-start="797" selection-end="797" vertical-scroll-proportion="0.65608466">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/WordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.12698413">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.16931216">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="234885" column="12" selection-start="0" selection-end="2486812" vertical-scroll-proportion="0.26363635">
-          <folding />
+        <state line="50" column="99" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.52910054">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
