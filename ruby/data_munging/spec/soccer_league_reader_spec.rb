@@ -12,6 +12,4 @@ describe SoccerLeagueReader do
     
   end
 
-
-
 end

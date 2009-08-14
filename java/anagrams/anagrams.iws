@@ -80,7 +80,7 @@
       <file leaf-file-name="three_words.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/three_words.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02116402">
+            <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.013636364">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="small_dictionary.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/small_dictionary.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.06349207">
+            <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.04090909">
               <folding />
             </state>
           </provider>
@@ -98,10 +98,8 @@
       <file leaf-file-name="AnagramTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/AnagramTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="18" selection-start="797" selection-end="797" vertical-scroll-proportion="0.65608466">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.04090909">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +107,7 @@
       <file leaf-file-name="dictionary.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.22181146">
+            <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.013636364">
               <folding />
             </state>
           </provider>
@@ -118,10 +116,8 @@
       <file leaf-file-name="Anagram.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Anagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="99" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.52910054">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="73" column="0" selection-start="2048" selection-end="2473" vertical-scroll-proportion="0.68636364">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,10 +125,8 @@
       <file leaf-file-name="WordTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/WordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.12698413">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.06818182">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,7 +134,7 @@
       <file leaf-file-name="Word.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Word.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.16931216">
+            <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.10909091">
               <folding />
             </state>
           </provider>
@@ -320,12 +314,27 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
@@ -356,6 +365,13 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -368,28 +384,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -456,8 +450,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
-    <editor active="false" />
+    <frame x="1" y="25" width="1680" height="1024" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
@@ -473,7 +467,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="4" />
@@ -545,58 +539,52 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
+    <entry file="file://$PROJECT_DIR$/resources/three_words.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.22181146">
+        <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.013636364">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/small_dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.06349207">
+        <state line="3" column="4" selection-start="21" selection-end="21" vertical-scroll-proportion="0.04090909">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/three_words.txt">
+    <entry file="file://$PROJECT_DIR$/resources/dictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02116402">
+        <state line="180587" column="7" selection-start="1911390" selection-end="1911396" vertical-scroll-proportion="0.013636364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.10909091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/AnagramTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="797" selection-end="797" vertical-scroll-proportion="0.65608466">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="6" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.04090909">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/edgibbs/anagrams/WordTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.12698413">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="141" selection-end="141" vertical-scroll-proportion="0.16931216">
+        <state line="6" column="13" selection-start="103" selection-end="103" vertical-scroll-proportion="0.06818182">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/edgibbs/anagrams/Anagram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="99" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.52910054">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="73" column="0" selection-start="2048" selection-end="2473" vertical-scroll-proportion="0.68636364">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -64,8 +64,8 @@ public class Anagram {
   private String arrayToAlphabeticalString(char[] letters) {
     Arrays.sort(letters);
     StringBuffer letterString = new StringBuffer();
-    for (int i = 0; i < letters.length; i++) {
-      letterString.append(letters[i]);
+    for (char letter : letters) {
+      letterString.append(letter);
     }
     return letterString.toString();
   }
@@ -75,7 +75,7 @@ public class Anagram {
     try {
       File file = new File("resources/" + fileName);
       BufferedReader reader = new BufferedReader(new FileReader(file));
-      String line = null;
+      String line;
       while ((line = reader.readLine()) != null) {
         list.add(new Word(line.trim()));
       }

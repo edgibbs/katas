@@ -14,8 +14,7 @@ describe Reader do
       reader = Reader.new
       reader.get_lines('football.dat').size.should == 27
     end
-  
-  
+   
   end
 
 end

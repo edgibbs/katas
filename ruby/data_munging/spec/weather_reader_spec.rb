@@ -12,6 +12,4 @@ describe WeatherReader do
     
   end
 
-
-
 end
