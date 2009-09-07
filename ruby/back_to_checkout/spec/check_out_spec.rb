@@ -40,4 +40,8 @@ describe CheckOut do
     
   end
   
+  context "using deals" do
+  
+  end
+  
 end
