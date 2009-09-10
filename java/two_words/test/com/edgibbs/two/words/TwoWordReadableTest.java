@@ -11,7 +11,7 @@ public class TwoWordReadableTest {
 
   @Before
   public void before() {
-    checker = new TwoWordCheckerPerformance();
+    checker = new TwoWordCheckerReadable();
   }
 
   @Test

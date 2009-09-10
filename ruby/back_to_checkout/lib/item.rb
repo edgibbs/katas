@@ -1,14 +1,14 @@
 class Item
   
-  attr_reader :sku, :unit_price, :quanity, :special_price
+  attr_reader :sku, :unit_price, :quantity, :special_price
   
   def initialize(sku)
     @sku = sku
   end
   
-  def populate(price, quanity, special_price)
+  def populate(price, quantity, special_price)
     @unit_price = price
-    @quanity = quanity
+    @quantity = quantity
     @special_price = special_price
     self
   end

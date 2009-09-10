@@ -41,6 +41,13 @@ describe CheckOut do
   end
   
   context "using deals" do
+    
+    it "should get a total of 130 for AAA" do
+      @register.scan('A')
+      @register.scan('A')
+      @register.scan('A')
+      @register.total.should == 130 
+    end
   
   end
   
