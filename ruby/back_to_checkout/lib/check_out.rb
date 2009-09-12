@@ -1,43 +1,41 @@
 class CheckOut
   
   def initialize(pricing_rules) 
+    @deals = {}
     @cart = ""
-    @pricing_rules = []
-    @pricing_rules = pricing_rules
     @unit_prices = {}
-    pricing_rules.each do | item |
-      @unit_prices[item.sku] = item.unit_price
-    end
+    load_price_rules(pricing_rules)
   end
   
   def scan(sku)
     @cart << sku
   end
   
-  def price(sku)
-    @unit_prices[sku]
-  end
-  
   def total() 
-    total = subTotalFromDeals()
+    saved_cart = @cart
+    total = subtotal_from_deals()
     @cart.split(//).each do | sku |
       total = total + @unit_prices[sku]
     end
+    @cart = saved_cart
     total
   end
   
   private
   
-  def subTotalFromDeals()
-    sub_total = 0
-    deals = {}
-    @pricing_rules.each do | item |
+  def load_price_rules(pricing_rules)
+    pricing_rules.each do | item |
+      @unit_prices[item.sku] = item.unit_price
       if (item.quantity && item.special_price)
-        deals[item.sku * item.quantity] = item.special_price
-      end
+         @deals[item.sku * item.quantity] = item.special_price
+       end
     end
-    
-    deals.each do | key, value |
+  end
+  
+  def subtotal_from_deals()
+    sub_total = 0
+    @deals.each do | key, value |
+      @cart = @cart.split(//).sort.join
       hits = @cart.scan(key)
       sub_total = sub_total + (value * hits.size)
       hits.size.times do
@@ -45,23 +43,6 @@ class CheckOut
       end
     end
     sub_total
-  end
-  
-  # def subTotalFromDeals()
-  #   sub_total = 0
-  #   item_totals = {}
-  #   item_total.default = 0
-  #   @cart.each do | item |
-  #     item_totals[item.sku] = item_totals[item.sku] + 1
-  #   end
-  #   
-  #   @pricing_rules.each do | item |
-  #     if (item_totals[item.sku] >= item.quantity)
-  #       sub_total = subtotal + item.special_price
-  #     end
-  #   end
-  # end
-  
-  
+  end  
 
 end
