@@ -1,4 +1,5 @@
 # .gitignore for Coding Katas
 
+*.iws
 *.class 
 */out
