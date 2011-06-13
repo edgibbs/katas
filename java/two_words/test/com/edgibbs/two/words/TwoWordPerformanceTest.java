@@ -37,4 +37,5 @@ public class TwoWordPerformanceTest {
     assertEquals(10652, checker.numberOfSixLetterCombinations());
   }
 
+
 }
