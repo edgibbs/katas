@@ -3,10 +3,10 @@ defmodule SayingHelloTest do
   import ExUnit.CaptureIO
   doctest SayingHello
 
-  test "says hello world" do
+  test "prompts for name and delivers greeting" do
     say_hello = fn ->
       SayingHello.CLI.main(nil)
     end
-    assert capture_io(say_hello) == "Hello world\n"
+    assert capture_io([input: "Ed"], say_hello) == "What is your name?Hello, Ed, nice to meet you!\n"
   end
 end

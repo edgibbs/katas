@@ -1,10 +1,8 @@
 defmodule SayingHello do
-  def start do
-  end
-
   defmodule CLI do
     def main(args) do
-      IO.puts "Hello world"
+      name = IO.gets "What is your name?"
+      IO.puts "Hello, #{name}, nice to meet you!"
     end
   end
 end
