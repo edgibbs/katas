@@ -3,6 +3,6 @@
 Built it with escript
 
 ```bash
-mix build.escript
-./escript
+mix escript.build
+./saying_hello
 ```
