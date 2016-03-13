@@ -1,0 +1,2 @@
+defmodule CountCharacters do
+end
