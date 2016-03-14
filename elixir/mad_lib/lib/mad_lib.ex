@@ -1,0 +1,2 @@
+defmodule MadLib do
+end
