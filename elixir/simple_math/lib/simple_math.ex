@@ -1,0 +1,2 @@
+defmodule SimpleMath do
+end
