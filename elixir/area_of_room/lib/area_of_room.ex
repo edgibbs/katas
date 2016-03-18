@@ -1,0 +1,2 @@
+defmodule AreaOfRoom do
+end
