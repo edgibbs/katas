@@ -3,7 +3,7 @@ defmodule RetirementCalculatorTest do
   doctest RetirementCalculator
 
   test "calculate your retirement year" do
-    {{current_year, _, _}, {_,_,_}} = :calendar.now_to_local_time(:erlang.now)
+    {{current_year, _, _}, {_,_,_}} = :calendar.now_to_local_time(:erlang.timestamp)
     expected_output =
     """
     You have 40 years left until retirement.

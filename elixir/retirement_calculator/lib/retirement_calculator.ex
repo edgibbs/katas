@@ -8,7 +8,7 @@ defmodule RetirementCalculator do
     end
 
     def retirement_statement(current_age, retirement_age) do
-      {{current_year, _, _}, {_,_,_}} = :calendar.now_to_local_time(:erlang.now)
+      {{current_year, _, _}, {_,_,_}} = :calendar.now_to_local_time(:erlang.timestamp)
       """
       You have #{retirement_age - current_age} years left until retirement.
       It's #{current_year}, so you can retire in #{current_year + 40}.
