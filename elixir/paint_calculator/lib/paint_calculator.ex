@@ -1,0 +1,2 @@
+defmodule PaintCalculator do
+end
