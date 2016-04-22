@@ -1,0 +1,2 @@
+defmodule CurrencyConversion do
+end
