@@ -3,8 +3,14 @@ defmodule BmiCalculatorTest do
   import ExUnit.CaptureIO
   doctest BmiCalculator
 
+  defmodule FakeSystem do
+    def halt(0) do
+      {1000, nil }
+    end
+  end
+
   defp bmi_calculator do
-    fn -> BmiCalculator.CLI.main(nil) end
+    fn -> BmiCalculator.CLI.main(FakeSystem) end
   end
 
   test "when underweight" do
@@ -29,5 +35,10 @@ defmodule BmiCalculatorTest do
     Your weight in pounds: Your height in inches: Your BMI is 23.7.
     You are within the ideal weight range.
     """
+  end
+
+  @tag :pending
+  test "use non-numeric data" do
+    assert capture_io([input: "pounds"], bmi_calculator) == "Your weight in pounds: Numbers stupid"
   end
 end

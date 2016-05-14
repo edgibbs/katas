@@ -1,8 +1,10 @@
 defmodule BmiCalculator do
   defmodule CLI do
-    def main(_args) do
-      {weight, _} = IO.gets("Your weight in pounds: ") |> String.strip |> Integer.parse
-      {height, _} = IO.gets("Your height in inches: ") |> String.strip |> Integer.parse
+    require IEx
+
+    def main(system \\ System) do
+      {weight, _} = IO.gets("Your weight in pounds: ") |> String.strip |> Integer.parse |> check_numeric(system)
+      {height, _} = IO.gets("Your height in inches: ") |> String.strip |> Integer.parse |> check_numeric(system)
 
       case calculate(weight, height) do
         bmi when bmi < 18.5 -> IO.puts "Your BMI is #{bmi}.\nYou are underweight. You should see your doctor."
@@ -13,6 +15,13 @@ defmodule BmiCalculator do
 
     defp calculate(weight, height) do
       (weight / (height * height)) * 703 |> Float.round(1)
+    end
+
+    defp check_numeric(input, system) do
+      if input == :error do
+        system.halt(0)
+      end
+      input
     end
   end
 end
