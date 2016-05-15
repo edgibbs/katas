@@ -1,0 +1,2 @@
+defmodule MultistateTaxCalculator do
+end
