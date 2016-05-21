@@ -14,4 +14,12 @@ defmodule AnagramCheckerTest do
     Enter the first string: Enter the second string: "note" and "tone" are anagrams.
     """
   end
+
+  test "invalid anagram" do
+    assert capture_io([input: "door\ndone"], anagram_checker) ==
+    """
+    Enter two strings and I'll tell you if they're anagrams: 
+    Enter the first string: Enter the second string: "door" and "done" are not anagrams.
+    """
+  end
 end
