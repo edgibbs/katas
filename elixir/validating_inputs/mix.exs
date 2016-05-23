@@ -7,7 +7,7 @@ defmodule ValidatingInputs.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     escript: [main_module: ValidatingInput.CLI],
+     escript: [main_module: ValidatingInputs.CLI],
      deps: deps]
   end
 
