@@ -1,7 +1,11 @@
 defmodule GuessNumbers do
   defmodule CLI do
-    def main(args \\ [nil]) do
-      {:ok, not_random_number} = Enum.fetch(args, 0)
+    def main(args) do
+      not_random_number =
+      case args do
+        [] -> nil
+        _ -> Enum.fetch(args, 0) |> elem(1)
+      end
       play_game(not_random_number)
     end
 
