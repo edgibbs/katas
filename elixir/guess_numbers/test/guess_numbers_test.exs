@@ -24,4 +24,14 @@ defmodule GuessNumbersTest do
       Play again? All done.
       """
   end
+
+  test "handles bad inputs" do
+    guess_numbers = fn -> GuessNumbers.CLI.main([2]) end
+    assert capture_io([input: "1\nx\n2\nn"], guess_numbers) ==
+      """
+      Let's play Guess the Number.
+      Pick a difficulty level (1, 2, or 3): I have my number. What's your guess? Guess again: You got it in 2 guesses!
+      Play again? All done.
+      """
+  end
 end
