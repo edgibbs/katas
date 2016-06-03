@@ -1,0 +1,2 @@
+defmodule PasswordGenerator do
+end
