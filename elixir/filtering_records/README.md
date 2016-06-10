@@ -1,20 +1,8 @@
 # FilteringRecords
 
-**TODO: Add description**
+Built it with escript
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add filtering_records to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:filtering_records, "~> 0.0.1"}]
-        end
-
-  2. Ensure filtering_records is started before your application:
-
-        def application do
-          [applications: [:filtering_records]]
-        end
-
+```bash
+mix escript.build
+./filtering_records
+```
