@@ -7,8 +7,7 @@ defmodule FilteringRecordsTest do
     filtering_records = fn -> FilteringRecords.CLI.main(nil) end
     assert capture_io([input: "Jac\n"], filtering_records) ==
     """
-    Enter a search string: 
-    Name                 | Position             | Separation Date
+    Enter a search string: Name                 | Position             | Separation Date
     -------------------------------------------------------------
     Jacquelyn Jackson    | DBA                  |             
     Jake Jacobson        | Programmer           |             

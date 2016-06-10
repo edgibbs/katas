@@ -2,8 +2,9 @@ defmodule FilteringRecords do
   defmodule CLI do
     def main(_args) do
       search_term = IO.gets("Enter a search string: ") |> String.strip
-      matching_employees = matches(search_term)
+      matching_employees = matches(search_term) |> Enum.sort(&(&2.last_name > &1.last_name))
       print_header
+      print_employees(matching_employees)
     end
 
     defp print_header do
@@ -23,6 +24,10 @@ defmodule FilteringRecords do
         %{first_name: "Jacquelyn", last_name: "Jackson", position: "DBA", separation_date: ""},
         %{first_name: "Sally", last_name: "Weber", position: "Web Developer", separation_date: "2015-12-18"}
       ]
+    end
+
+    defp print_employees(employees) do
+      Enum.map(employees, fn(employee) -> IO.puts "#{String.ljust(employee.first_name <> " " <> employee.last_name, 20)} | #{String.ljust(employee.position, 20)} | #{String.ljust(employee.separation_date, 12)}" end)
     end
   end
 end
