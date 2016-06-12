@@ -1,20 +1,8 @@
 # NameSorter
 
-**TODO: Add description**
+Built it with escript
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add name_sorter to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:name_sorter, "~> 0.0.1"}]
-        end
-
-  2. Ensure name_sorter is started before your application:
-
-        def application do
-          [applications: [:name_sorter]]
-        end
-
+```bash
+mix escript.build
+./name_sorter
+```
