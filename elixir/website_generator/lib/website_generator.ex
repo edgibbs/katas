@@ -1,0 +1,2 @@
+defmodule WebsiteGenerator do
+end
