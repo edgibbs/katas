@@ -1,0 +1,2 @@
+defmodule ProductSearch do
+end
