@@ -1,8 +1,13 @@
 defmodule ProductSearchTest do
   use ExUnit.Case
+  import ExUnit.CaptureIO
   doctest ProductSearch
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "can find a product" do
+    product_search = fn -> ProductSearch.CLI.main(nil) end
+    assert capture_io([input: "iPad\n"], product_search) ==
+    """
+    What is the product name? 
+    """
   end
 end
