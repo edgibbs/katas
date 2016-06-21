@@ -5,7 +5,7 @@ defmodule ProductSearchTest do
 
   test "can find a product" do
     product_search = fn -> ProductSearch.CLI.main(nil) end
-    assert capture_io([input: "iPad\n"], product_search) ==
+    assert capture_io([input: "iPad\nWidget"], product_search) ==
     """
     What is the product name? 
     """
