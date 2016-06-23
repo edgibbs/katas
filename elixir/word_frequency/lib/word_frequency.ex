@@ -1,0 +1,2 @@
+defmodule WordFrequency do
+end
