@@ -11,6 +11,10 @@ defmodule GrabbingWeather do
       json_result = Poison.Parser.parse!(response.body)
       temperature_kelvin = json_result["main"]["temp"]
       temperature_farenheit = (temperature_kelvin - 273) * (9/5) + 32 |> round
+      print_results(city, temperature_farenheit)
+    end
+
+    defp print_results(city, temperature_farenheit) do
       IO.puts "#{city} weather: #{temperature_farenheit} degrees Farenheit"
     end
   end
