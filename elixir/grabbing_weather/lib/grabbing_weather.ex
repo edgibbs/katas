@@ -5,17 +5,29 @@ defmodule GrabbingWeather do
 
     def main(args) do
       city = IO.gets("Where are you? ") |> String.strip
-      http_client = List.first(args) || HTTPotion
-      http_client.start
-      response = http_client.get("http://api.openweathermap.org/data/2.5/weather?q=#{city}&appid=#{@api_key}")
-      json_result = Poison.Parser.parse!(response.body)
-      temperature_kelvin = json_result["main"]["temp"]
-      temperature_farenheit = (temperature_kelvin - 273) * (9/5) + 32 |> round
-      print_results(city, temperature_farenheit)
+      fetch_city_weather(args, city)
+        |> Poison.Parser.parse!
+        |> temperature_in_kelvin
+        |> convert_to_farenheit
+        |> print_results(city)
     end
 
-    defp print_results(city, temperature_farenheit) do
+    defp print_results(temperature_farenheit, city) do
       IO.puts "#{city} weather: #{temperature_farenheit} degrees Farenheit"
+    end
+
+    defp fetch_city_weather(args, city) do
+      http_client = List.first(args) || HTTPotion
+      http_client.start
+      http_client.get("http://api.openweathermap.org/data/2.5/weather?q=#{city}&appid=#{@api_key}").body
+    end
+
+    defp temperature_in_kelvin(json_result) do
+      json_result["main"]["temp"]
+    end
+
+    defp convert_to_farenheit(temp_kelvin) do
+      (temp_kelvin - 273) * (9/5) + 32 |> round
     end
   end
 end

@@ -14,7 +14,7 @@ defmodule FakeHttpClient do
   def start do
   end
 
-  def get(url) do
+  def get(_url) do
     %{body: weather_data}
   end
 
