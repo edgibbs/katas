@@ -1,0 +1,2 @@
+defmodule FlickrSearch do
+end
