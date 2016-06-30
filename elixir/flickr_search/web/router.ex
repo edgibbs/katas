@@ -16,6 +16,7 @@ defmodule FlickrSearch.Router do
   scope "/", FlickrSearch do
     pipe_through :browser # Use the default browser stack
 
+    get "/search", SearchController, :index
     get "/", PageController, :index
   end
 
