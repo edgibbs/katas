@@ -1,5 +1,5 @@
 defmodule FlickrSearch.SearchController do
-  user FlickrSearch.Web, :controller
+  use FlickrSearch.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"
