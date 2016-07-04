@@ -35,6 +35,7 @@ defmodule FlickrSearch.Mixfile do
      {:gettext, "~> 0.11"},
      {:poison, "~> 2.0"},
      {:httpotion, "~> 3.0.0"},
+     {:sweet_xml, "~> 0.6"},
      {:cowboy, "~> 1.0"}]
   end
 end

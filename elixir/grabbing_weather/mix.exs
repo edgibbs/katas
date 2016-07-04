@@ -29,8 +29,8 @@ defmodule GrabbingWeather.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:poison, "~> 2.0"},
-      {:httpotion, "~> 3.0.0"}
+      {:httpotion, "~> 3.0.0"},
+      {:sweet_xml, "~> 0.6.1"}
     ]
   end
 end
