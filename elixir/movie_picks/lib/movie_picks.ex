@@ -1,0 +1,2 @@
+defmodule MoviePicks do
+end
