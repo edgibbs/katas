@@ -1,5 +1,6 @@
 defmodule MoviePicksTest do
   use ExUnit.Case
+  import ExUnit.CaptureIO
   doctest MoviePicks
 
   test "the truth" do
