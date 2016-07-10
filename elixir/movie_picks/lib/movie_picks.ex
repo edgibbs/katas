@@ -6,7 +6,7 @@ defmodule MoviePicks do
       movie_name = IO.gets("Enter the name of a movie: ") |> String.strip
       fetch_movie(args, movie_name)
         |> Poison.Parser.parse!
-        |> print_results(movie_name)
+        |> print_results
     end
 
     defp fetch_movie(args, movie_name) do
@@ -15,7 +15,7 @@ defmodule MoviePicks do
       http_client.get("http://www.omdbapi.com/?t=#{movie_name}").body
     end
 
-    defp print_results(movie, movie_name) do
+    defp print_results(movie) do
       IO.puts """
       Title: #{movie["Title"]}
       Year: #{String.slice(movie["Released"], -4..-1)}
