@@ -8,8 +8,14 @@ defmodule TimeService.Router do
   plug :match
   plug :dispatch
 
-  # Root path
   get "/" do
-    send_resp(conn, 200, "This entire website runs on Elixir plugs!")
+    conn
+    |> put_resp_content_type("application/json")
+    |> send_resp(200, Poison.encode!(%{currentTime: time_format}))
+  end
+
+  defp time_format do
+    {{year, month, day}, {hour, minute, second}} = :calendar.local_time()
+    "#{year}-#{month}-#{day} #{hour}:#{minute}:#{second}"
   end
 end
