@@ -1,6 +1,6 @@
 # TimeService
 
-Web service is Cowboy with plug:
+Web service is Cowboy with Plug:
 
 Start with:
 
